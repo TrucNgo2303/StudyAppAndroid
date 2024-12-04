@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_forum"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_margin="16dp"
+                android:src="@drawable/chat"
+                />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_forum"
+                android:layout_width="200dp"
+                android:layout_height="0dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/img_forum"
+                android:text="Chủ đề"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="16dp"
+                android:textStyle="bold"
+                />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_poster"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/tv_forum"
+                app:layout_constraintLeft_toRightOf="@id/img_forum"
+                app:layout_constraintBottom_toBottomOf="@id/img_forum"
+                android:text="Người đăng:"
+                android:layout_marginLeft="16dp"
+                />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_poster_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/tv_forum"
+                app:layout_constraintLeft_toRightOf="@id/tv_poster"
+                app:layout_constraintBottom_toBottomOf="@id/img_forum"
+                android:text="Nguyễn Văn A"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginLeft="8dp"
+                />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:text="Lượt xem"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_view_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/tv_view"
+                app:layout_constraintRight_toRightOf="@id/tv_view"
+                app:layout_constraintLeft_toLeftOf="@id/tv_view"
+                android:text="1600"
+                android:layout_marginTop="8dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

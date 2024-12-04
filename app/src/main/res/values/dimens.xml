@@ -1,0 +1,4 @@
+<resources>
+    <!-- Chiều cao mặc định cho YouTubePlayerView -->
+    <dimen name="youtube_player_default_height">200dp</dimen>
+</resources>
